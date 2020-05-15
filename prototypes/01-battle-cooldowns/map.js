@@ -2,6 +2,7 @@ Crafty.c('Tile', {
 
     init: function() {
         this.requires("Actor");
+        this.size(31, 31);
         return this;
     },
 

@@ -2,6 +2,15 @@ Crafty.c('Player', {
 
     init: function() {
         this.requires("Actor");
+        this.click(() => {
+            Crafty.forEach("Player", (p) => {
+                p.color("white");
+                p.isSelected = false;
+            });
+            
+            this.color("blue");
+            this.isSelected = true;
+        });
         return this;
     },
 
