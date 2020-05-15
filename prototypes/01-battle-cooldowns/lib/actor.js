@@ -240,15 +240,15 @@ Crafty.c('Moveable', {
 
 Crafty.c("Graphics", {
   init: function() {
-    if (Crafty.support.webgl) {
-      this.requires("WebGL");
-      this.graphics = "WebGL";
-    } else if (Crafty.support.canvas) {
+    // if (Crafty.support.webgl) {
+    //   this.requires("WebGL");
+    //   this.graphics = "WebGL";
+    // } else if (Crafty.support.canvas) {
       this.requires("Canvas");
       this.graphics = "Canvas";
-    } else {
-      this.requires("DOM");
-      this.graphics = "DOM";
-    }
+    // } else {
+    //   this.requires("DOM");
+    //   this.graphics = "DOM";
+    // }
   }
 });
