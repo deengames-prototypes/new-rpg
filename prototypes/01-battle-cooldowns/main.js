@@ -13,8 +13,17 @@ Game = {
         {
             for (var x = 0; x < Game.view.width / 32; x++)
             {
-                var t = Crafty.e("Tile").initialize(x, y);
+                Crafty.e("Tile").initialize(x, y);
             }
         }
+
+        Crafty.e("Player").initialize(5, 9);
+        Crafty.e("Player").initialize(4, 8);
+        Crafty.e("Player").initialize(4, 10);
+
+        Crafty.e("Monster").initialize(25, 9);
+        Crafty.e("Monster").initialize(27, 9);
+        Crafty.e("Monster").initialize(25, 11);
+        Crafty.e("Monster").initialize(27, 11);
     }
 }
